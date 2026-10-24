@@ -1,0 +1,8 @@
+generated: '2026-10-23'
+method: none
+source: probe
+
+deployment:
+  mode: none
+  auth: unknown
+  verified: derived

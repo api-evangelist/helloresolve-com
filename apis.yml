@@ -1,25 +1,74 @@
 aid: helloresolve-com
+
 name: Resolve
+
+image: https://www.helloresolve.com/wp-content/uploads/2019/03/usatoday-2.png
+
 description: 'Resolve is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
   backed by qed-investors) and added to the network as a stub for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/helloresolve-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
-- Company
-apis: []
+- Debt Relief
+- Financial Health
+- Bankruptcy
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- qed-investors
+
 common:
+- type: Hosts
+  url: hosts/helloresolve-com-hosts.yml
+- type: Vendors
+  url: vendors/helloresolve-com-vendors.yml
+- type: TermsOfService
+  url: https://www.helloresolve.com/terms/
+- type: Support
+  url: https://www.helloresolve.com/help/
+- type: PrivacyPolicy
+  url: https://www.helloresolve.com/privacy/
+- type: Newsroom
+  url: https://www.helloresolve.com/press/
+- type: Leadership
+  url: https://www.helloresolve.com/team/
+- type: DomainSecurity
+  url: security/helloresolve-com-domain-security.yml
 - type: Website
   url: http://helloresolve.com
+
+apis: []
+
+x-backed-by:
+- qed-investors
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public API documentation or machine-readable contract was found on the provider's website.
+  evidence:
+    - url: https://www.helloresolve.com/openapi.json
+      status: 404
+  checked: '2026-10-24'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
